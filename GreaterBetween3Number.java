@@ -17,6 +17,5 @@ public class GreaterBetween3Number {
           }else {
               System.out.println("C is Greater");
           }
-
     }
 }
