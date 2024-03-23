@@ -14,7 +14,6 @@ public class SortedArrayInJava {
                 isAscending=false;
             }
         }
-
         if(isAscending) {
             System.out.println("The array is sorted in ascending order");
         } else {
