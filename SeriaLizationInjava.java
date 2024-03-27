@@ -1,9 +1,9 @@
 import java.io.*;
 
 public class SeriaLizationInjava {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        Employee e=new Employee();
+        Externalization e=new Externalization();
         e.setId(10);
         e.setName("Anish Kumar Sharma");
 
@@ -16,11 +16,11 @@ public class SeriaLizationInjava {
         objectOutputStream.writeObject(e);
 
 
-        //Deserializable
-    //Location Where you can Create the Serializable File
+          //Deserializable
+        //Location Where you can Create the  Deserializable File
         FileInputStream fileInputStream=new FileInputStream("C:\\Users\\hp\\Desktop\\Java basic\\CoderFile.txt");
         ObjectInputStream  inputStream=new ObjectInputStream(fileInputStream);
-        Employee reCreateObj= (Employee) inputStream.readObject();
+        Externalization reCreateObj= (Externalization) inputStream.readObject();
         System.out.println(reCreateObj.getId());
         System.out.println(reCreateObj.getName());
     }
