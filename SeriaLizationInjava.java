@@ -6,11 +6,10 @@ public class SeriaLizationInjava {
         Employee e=new Employee();
         e.setId(10);
         e.setName("Anish Kumar Sharma");
-        FileOutputStream fileOutputStream=new FileOutputStream("C:\\Users\\hp\\Desktop\\Java basic\\CodeDecodeFile.txt");
+        //Location Where you can Create the Serializable File
+        FileOutputStream fileOutputStream=new FileOutputStream("C:\\Users\\hp\\Desktop\\Java basic\\CoderFile.txt");
         ObjectOutputStream objectOutputStream=new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(e);
-        objectOutputStream.close();
-        fileOutputStream.close();
 
     }
 }
