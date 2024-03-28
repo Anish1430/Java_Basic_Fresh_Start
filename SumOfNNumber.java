@@ -7,9 +7,9 @@ public class SumOfNNumber {
           int sum=0;
           for(int i=0;i<n;i++){
               int num=sc.nextInt();
-              sum +=num;
+              sum =sum + num;
           }
-        System.out.println("the Sum of N Natural Number is = "+sum);
+        System.out.println("The Sum of N Natural Number is = "+sum);
 
     }
 }
